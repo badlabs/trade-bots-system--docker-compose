@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  tradebot1:
+    build: ./trade-bot--tinkoff/
+    environment:
+      TINKOFF_SANDBOX_API_KEY: # token for tradebot1 exchange account
+      BOT_TOKEN: # token for tradebot1
+    ports:
+      - "4268:4268"
+  tradebot2:
+    build: ./trade-bot--tinkoff/
+    environment:
+      TINKOFF_SANDBOX_API_KEY: # token for tradebot2 exchange account
+      BOT_TOKEN: # token for tradebot2
+    ports:
+      - "4269:4268"
+  dashboard:
+    build: ./trade-bots-dashboard/
+    ports:
+      - "8080:80"
+
+cache:
+  build: ./trade-bot--tinkoff/
