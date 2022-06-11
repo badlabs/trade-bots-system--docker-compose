@@ -1,0 +1,6 @@
+[submodule "trade-bot--tinkoff"]
+	path = trade-bot--tinkoff
+	url = https://github.com/badlabs/trade-bot--tinkoff.git
+[submodule "trade-bots-dashboard"]
+	path = trade-bots-dashboard
+	url = https://github.com/badlabs/trade-bots-dashboard.git
