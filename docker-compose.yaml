@@ -18,6 +18,3 @@ services:
     build: ./trade-bots-dashboard/
     ports:
       - "8080:80"
-
-cache:
-  build: ./trade-bot--tinkoff/
