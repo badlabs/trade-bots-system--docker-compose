@@ -1,0 +1,5 @@
+version: "3.9"
+services:
+  tradebot-common--tinkoff:
+    build: ./trade-bot--tinkoff/
+    image: badlabs/trade-bot--tinkoff
